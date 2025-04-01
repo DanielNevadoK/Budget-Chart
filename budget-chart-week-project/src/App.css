@@ -32,7 +32,12 @@
   box-sizing: border-box;
 }
 .balance-title p{
-  align-items: baseline;
+  margin-bottom: 0;
+  color: #fffbf6;
+}
+.balance-title h2{
+  margin-top: 0;
+  color: #fffbf6;
 }
 .logo-cont {
   width: 50%;
@@ -58,16 +63,41 @@
   align-items: flex-start;
 }
 .dd-chart{
+  border: 1px dashed red;
   height: 55%;
-
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content:space-between;
 }
+.week-day-container{
+  border: 2px dashed red;
+}
+
 .dd-summary{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   height: 25%;
+  padding-top: .5rem;
   border-top: 2px solid #F8E9DD;
 }
-.dd-sum-text {
+.dd-sum-text, .dd-sum-text2  {
+  width: fit-content;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+}
+.dd-sum-text{
+  align-items: start;
+  justify-content: start;
+}
+.dd-sum-text2{
+  align-items: end;
+  justify-content: end;
+}
+.dd-sum-text h1, .dd-sum-text2 p {
+  margin-top: 0;
+}
+.dd-sum-text p, .dd-sum-text2 h4{
+  margin-bottom: 0;
 }
